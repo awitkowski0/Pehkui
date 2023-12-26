@@ -1,5 +1,6 @@
 package virtuoel.pehkui.server.command;
 
+import java.security.SecureRandom;
 import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.SortedSet;
@@ -1112,7 +1113,7 @@ public class ScaleCommand
 		return I18nUtils.translate(unlocalized, message, easingId);
 	}
 	
-	private static final Random RANDOM = new Random();
+	private static final Random RANDOM = new SecureRandom();
 	
 	private static final DecimalFormat SCALE_FORMAT;
 	
